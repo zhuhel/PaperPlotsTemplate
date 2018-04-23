@@ -2,7 +2,7 @@
 
 ### Get the code:
 ```
-git clone ssh://git@gitlab.cern.ch:7999/lxu/OffshellPaperPlots.git
+git clone ssh://git@gitlab.cern.ch:7999/hezhu/PaperPlotsTemplate.git
 ```
 
 ### Setup the needed environment:
