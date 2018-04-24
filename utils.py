@@ -57,7 +57,12 @@ ggfs = '#sigma(gg ' + times_brs
 vbfs = '#sigma(qq ' + times_brs
 cls = '#it{CL_{S}}'
 four_l = lepp + lepm + lepp + lepm 
-twol_twov = lepp + lepm + nu + nu 
+four_e = ep + em + ep + em
+four_mu = mup + mum + mup + mum
+two_e_two_mu = ep + em + mup + mum
+two_l_two_v = lepp + lepm + nu + nu 
+two_e_two_v = ep + em + nu + nu 
+two_mu_two_v = mup + mum + nu + nu 
 met = '#it{E_{T}^{miss}} [GeV]'
 mTZZ = '#it{m_{T}^{ZZ}} [GeV]'
 

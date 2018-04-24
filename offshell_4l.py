@@ -6,16 +6,16 @@ def main():
   
   ### Main definitions
   ROOT.gROOT.SetBatch()
-  isLog = 1
+  isLog = 0
 
   make_plot( '_m4l_Incl_incl_M4lAll_13TeV.root',   '', utils.h_to_zz_to + utils.four_l + utils.inv_prime, 220, 1200, 0.02, 1.98, isLog)
-  make_plot( '_m4l_Incl_4e_M4lAll_13TeV.root',   '', utils.h_to_zz_to + utils.four_l + utils.inv_prime, 220, 1200, 0.02, 1.98, isLog )
-  make_plot( '_m4l_Incl_4mu_M4lAll_13TeV.root',   '', utils.h_to_zz_to + utils.four_l + utils.inv_prime, 220, 1200, 0.02, 1.98, isLog )
-  make_plot( '_m4l_Incl_2mu2e_M4lAll_13TeV.root',   '', utils.h_to_zz_to + utils.four_l + utils.inv_prime, 220, 1200, 0.02, 1.98, isLog )
+  make_plot( '_m4l_Incl_4e_M4lAll_13TeV.root',   '', utils.h_to_zz_to + utils.four_e + utils.inv_prime, 220, 1200, 0.02, 1.98, isLog )
+  make_plot( '_m4l_Incl_4mu_M4lAll_13TeV.root',   '', utils.h_to_zz_to + utils.four_mu + utils.inv_prime, 220, 1200, 0.02, 1.98, isLog )
+  make_plot( '_m4l_Incl_2mu2e_M4lAll_13TeV.root',   '', utils.h_to_zz_to + utils.two_e_two_mu + utils.inv_prime, 220, 1200, 0.02, 1.98, isLog )
   make_plot( '_MEM_Incl_incl_M4lAll_13TeV.root',   '', utils.h_to_zz_to + utils.four_l + utils.inv_prime, -4.5, 0.5, 0.02, 1.98, isLog )
-  make_plot( '_MEM_Incl_4e_M4lAll_13TeV.root',   '', utils.h_to_zz_to + utils.four_l + utils.inv_prime, -4.5, 0.5, 0.02, 1.98, isLog )
-  make_plot( '_MEM_Incl_4mu_M4lAll_13TeV.root',   '', utils.h_to_zz_to + utils.four_l + utils.inv_prime, -4.5, 0.5, 0.02, 1.98, isLog )
-  make_plot( '_MEM_Incl_2mu2e_M4lAll_13TeV.root',   '', utils.h_to_zz_to + utils.four_l + utils.inv_prime, -4.5, 0.5, 0.02, 1.98, isLog )
+  make_plot( '_MEM_Incl_4e_M4lAll_13TeV.root',   '', utils.h_to_zz_to + utils.four_e + utils.inv_prime, -4.5, 0.5, 0.02, 1.98, isLog )
+  make_plot( '_MEM_Incl_4mu_M4lAll_13TeV.root',   '', utils.h_to_zz_to + utils.four_mu + utils.inv_prime, -4.5, 0.5, 0.02, 1.98, isLog )
+  make_plot( '_MEM_Incl_2mu2e_M4lAll_13TeV.root',   '', utils.h_to_zz_to + utils.two_e_two_mu + utils.inv_prime, -4.5, 0.5, 0.02, 1.98, isLog )
 
 def make_plot( file_name, cat, title, minX = -999., maxX = -1., minY = 0.02, maxY = 1.98, isLog = 1 ):
   ###

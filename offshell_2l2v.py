@@ -6,14 +6,14 @@ def main():
   
   ### Main definitions
   ROOT.gROOT.SetBatch()
-  isLog = 1
+  isLog = 0
 
-  make_plot( 'BJETVETO_eemm_met_tst_1.2.root',   '', utils.h_to_zz_to + utils.twol_twov + utils.inv_prime, 180, 1000, 0.02, 1.98, isLog )
-  make_plot( 'BJETVETO_ee_met_tst_1.2.root',   '', utils.h_to_zz_to + utils.twol_twov + utils.inv_prime, 180, 1000, 0.02, 1.98, isLog )
-  make_plot( 'BJETVETO_mm_met_tst_1.2.root',   '', utils.h_to_zz_to + utils.twol_twov + utils.inv_prime, 180, 1000, 0.02, 1.98, isLog )
-  make_plot( 'BJETVETO_eemm_mT_ZZ_1.2.root',   '', utils.h_to_zz_to + utils.twol_twov + utils.inv_prime, 300, 1200, 0.02, 1.98, isLog )
-  make_plot( 'BJETVETO_ee_mT_ZZ_1.2.root',   '', utils.h_to_zz_to + utils.twol_twov + utils.inv_prime, 300, 1200, 0.02, 1.98, isLog )
-  make_plot( 'BJETVETO_mm_mT_ZZ_1.2.root',   '', utils.h_to_zz_to + utils.twol_twov + utils.inv_prime, 300, 1200, 0.02, 1.98, isLog )
+  make_plot( 'BJETVETO_eemm_met_tst_1.2.root',   '', utils.h_to_zz_to + utils.two_l_two_v + utils.inv_prime, 180, 1000, 0.02, 1.98, isLog )
+  make_plot( 'BJETVETO_ee_met_tst_1.2.root',   '', utils.h_to_zz_to + utils.two_e_two_v + utils.inv_prime, 180, 1000, 0.02, 1.98, isLog )
+  make_plot( 'BJETVETO_mm_met_tst_1.2.root',   '', utils.h_to_zz_to + utils.two_mu_two_v + utils.inv_prime, 180, 1000, 0.02, 1.98, isLog )
+  make_plot( 'BJETVETO_eemm_mT_ZZ_1.2.root',   '', utils.h_to_zz_to + utils.two_l_two_v + utils.inv_prime, 300, 1200, 0.02, 1.98, isLog )
+  make_plot( 'BJETVETO_ee_mT_ZZ_1.2.root',   '', utils.h_to_zz_to + utils.two_e_two_v + utils.inv_prime, 300, 1200, 0.02, 1.98, isLog )
+  make_plot( 'BJETVETO_mm_mT_ZZ_1.2.root',   '', utils.h_to_zz_to + utils.two_mu_two_v + utils.inv_prime, 300, 1200, 0.02, 1.98, isLog )
 
 def make_plot( file_name, cat, title, minX = -999., maxX = -1., minY = 0.02, maxY = 1.98, isLog = 1 ):
   print "isLog:", isLog
